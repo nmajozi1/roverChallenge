@@ -1,0 +1,12 @@
+{
+    "port":"9091",
+    "mongoDB": {
+        "url":"mongodb://localhost:27017/Platfotm45"
+    },
+    "plateauParameters" : {
+        "x_max" : 20,
+        "x_min" : 0,
+        "y_max": 15,
+        "y_min" : 0
+    }
+}

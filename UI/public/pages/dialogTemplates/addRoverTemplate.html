@@ -1,0 +1,28 @@
+<md-dialog aria-label="Mango (Fruit)" style="width:800px">
+<form name="useForm" ng-cloak>
+    <md-toolbar>
+    <div class="md-toolbar-tools">
+        <h2>Add New Rover.</h2>
+    </div>
+    </md-toolbar>
+
+    <md-dialog-content>
+        <div class="md-dialog-content">
+            <md-input-container class="md-block">
+                <label>Rover Name</label>
+                <input type="text" name="txtName" ng-model="roverData.roverName" required="">
+                <div ng-messages="useForm.txtName.$error" role="alert" multiple="">
+                    <div ng-message="required" class="my-message">Please type in the Rover's Name.</div>
+                </div>
+            </md-input-container>
+        </div>
+    </md-dialog-content>
+
+    <md-dialog-actions layout="row">
+    <span flex></span>
+    <md-button ng-click="answer('Cancel')" class="md-raised md-primary">Cancel</md-button>
+    <md-button ng-disabled="!useForm.$valid" ng-click="answer('addRover', roverData)" class="md-raised md-primary">Add</md-button>
+    </md-dialog-actions>
+</form>
+</md-dialog>
+    

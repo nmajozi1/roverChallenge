@@ -1,0 +1,8 @@
+{
+    "port":"9090",
+    "mongoDB": {
+        "url":"mongodb://localhost:27017/Platfotm45"
+    },
+    "addRoverUrl" : "http://localhost:9091/addRover",
+    "moveRoverUrl": "http://localhost:9091/moveRover"
+}
